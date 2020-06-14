@@ -2,7 +2,6 @@
 
 const request = require('request')
 const axios = require('axios')
-const chalk = require('chalk')
 
 const geocode1 = (address) => {
 

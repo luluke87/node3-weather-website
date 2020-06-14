@@ -77,3 +77,14 @@ button {
   padding: 2em;
 }
 
+#messageThree {
+  display: none;
+  width: 200px;
+  color: green;
+  background-color: lightyellow;
+  border: 1px solid #888888;
+  border-radius: 0 1em 1em 1em;
+  margin:  20px auto;
+  padding: 2em;
+}
+

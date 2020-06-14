@@ -73,10 +73,12 @@ app.get('/weather', (req, res) => {
                 })
             }
             let weather = `It is currently ${foreCastdata.weather_descriptions}. There is a ${foreCastdata.precip} % chance of rain.`
+            let humidity = `The air has a humidity of ${foreCastdata.humidity} percent at the current temperature of ${foreCastdata.temperature}`
             res.send({
                 location,
                 address: req.query.address,
                 forecast: weather,
+                humidity
             })
         })
     })

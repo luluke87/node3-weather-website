@@ -1,0 +1,21 @@
+<!DOCTYPE html> <!-- Gibt Version des html standards an 
+    Wir arbeiten mit packs. Immer von opening Tag und closing tag, das einen Body umfasst -->
+    <html lang="de"> <!-- Hieran orientiert sich unter Umständen die autom. Übersetuzung oder eine Suchmaschine-->
+      <head> <!-- Wir haben innerhalb des html Tag einen head und einen body. Also 2 Kind-Elemente 
+      Der Head enthält Zusatzinformationen, die mit übertragen werden-->
+        <meta charset="utf-8" /> <!-- gängigste Kodierung, unterstützt auch smilyes und Umlaute. Meta Tag ist ein self closing tag. Das hat keinen Inhalt sondern nur Attribute-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Es existiert eine Smartphone Version-->
+        <title>About</title>
+        <link rel="icon" href="./img/weather.png">
+    
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"> <!-- Das Tag ist der Link. Es wird eine Datei geladen. -->
+        <link rel="stylesheet" href="../css/styles.css" /> <!-- In der Index.css ist Designcie drin. Die Reihenfolge ist egal ob erst href oder stylesheet-->
+      </head>
+      <body> <!-- -->
+        <div class="main-content">
+        {{>header}}
+        <img class="portrait" src="./img/pic1.jpg"></img>
+        </div>
+        {{>footer}}
+      </body>
+    </html>
